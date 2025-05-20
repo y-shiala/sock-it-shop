@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sock it Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Sock it</h1>
+      </div>
+      <nav>
+        <ul id="nav_links" class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Collection</a></li>
+          <li>
+            <a href="#" class="cta"><button>Contact</button></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger">
+        <i class="fa-solid fa-bars" style="color: #000"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero-section">
+        <div class="hero-left">
+          <h1>Your one-stop shop for cozy, funky, and fashionable socks.</h1>
+          <div class="btn-btn">
+            <a href="#" class="btn1 btn">Shop it</a>
+            <a href="#" class="btn2 btn">Collections</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="gallery">
+      <div class="photo1">
+        <img src="Images/funky.jpg" alt="" />
+      </div>
+      <div class="photo2">
+        <img src="Images/sock2.jpg" alt="" />
+      </div>
+      <div class="photo3">
+        <img src="Images/babysocks.jpg" alt="" />
+      </div>
+      <div class="photo4">
+        <img src="Images/main.jpg" alt="" />
+      </div>
+      <div class="photo5">
+        <img src="Images/white.jpg" alt="" />
+      </div>
+      <div class="photo6">
+        <img src="Images/yellow.jpg" alt="" />
+      </div>
+    </div>
+    <div class="form-sec">
+      <h2>Subscribe</h2>
+      <form id="subscribeForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password (min 8 chars)"
+          required
+        />
+        <span class="error" id="errorMsg"></span>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer1">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="footer2">
+       <p>
+        &copy; 2025 Sockit Shop
+       </p> 
+      </div>
+    </footer>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        // Toggle nav open/close
+        nav.classList.toggle("nav-active");
+      });
+    </script>
+  </body>
+</html>
